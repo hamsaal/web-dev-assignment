@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your NFT | NFT Marketplace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="create.html" class="active">Create</a>
+          <a href="new-to-nft.html">New to NFT?</a>
+        </div>
+        <button class="navbar-toggler">☰</button>
+      </nav>
+    </header>
+    <main>
+      <section class="create-nft">
+        <h1>CREATE YOUR NFT</h1>
+        <p>Your NFT will be emailed to us to get featured on our website</p>
+        <form
+          action="mailto:hs8403340@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="bordered-section">
+            <div class="nft-description">
+              <div class="section-header">
+                <h2>NFT's Description</h2>
+              </div>
+              <label for="nftName">Name</label>
+              <input
+                type="text"
+                id="nftName"
+                name="nftName"
+                required
+                size="30"
+              />
+
+              <div class="radio-group">
+                <label>Block Chain</label>
+                <input
+                  type="radio"
+                  id="diamond"
+                  name="blockChain"
+                  value="Diamond"
+                />
+                <label for="diamond">Diamond</label>
+                <input
+                  type="radio"
+                  id="triangle"
+                  name="blockChain"
+                  value="Triangle"
+                />
+                <label for="triangle">Triangle</label>
+              </div>
+
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                required
+                cols="50"
+                rows="5"
+              ></textarea>
+
+              <fieldset>
+                <legend>Select all that apply</legend>
+                <input
+                  type="checkbox"
+                  id="transferable"
+                  name="features"
+                  value="Transferable"
+                />
+                <label for="transferable">Transferable</label>
+                <input
+                  type="checkbox"
+                  id="nonFungible"
+                  name="features"
+                  value="Non-Fungible"
+                />
+                <label for="nonFungible">Non-Fungible</label>
+                <input
+                  type="checkbox"
+                  id="indivisible"
+                  name="features"
+                  value="Indivisible"
+                />
+                <label for="indivisible">Indivisible</label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="bordered-section">
+            <div class="user-information">
+              <div class="section-header">
+                <h2>YOUR INFORMATION</h2>
+              </div>
+              <label for="userName">Name</label>
+              <input
+                type="text"
+                id="userName"
+                name="userName"
+                required
+                class="single-line-input"
+                size="30"
+              />
+
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                required
+                class="single-line-input"
+                size="30"
+              />
+            </div>
+          </div>
+          <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Follow us on social media:</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com">Facebook</a>
+          </li>
+          <li><a href="https://www.youtube.com">YouTube</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
